@@ -13,7 +13,8 @@ rm -rf $backup_name
 rm $backup_name.tar.gz
 
 
-
+ mongodump --port 27017 -u "linuxuser" -p "saurav" --db="testdb" --out=/home/ubuntu/backup/mongodb
+ mongorestore --port 27017 -u "linuxuser" -p "saurav" --db="testdb" path of copied filename
 
 ***************************Restore from s3 bucket**********************
 
